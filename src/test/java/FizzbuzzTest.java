@@ -9,8 +9,19 @@ import static org.junit.Assert.*;
 public class FizzbuzzTest {
 
     @Test
-    public void shouldReturn3IfNumberDivBy3(){
+    public void shouldReturnFizzIfNumberDivBy3(){
         assertEquals("fizz", Fizzbuzz.getResults(3));
+    }
+
+
+    @Test
+    public void shouldReturnBuzzIfNumberDivBy5(){
+        assertEquals("buzz", Fizzbuzz.getResults(5));
+    }
+
+    @Test
+    public void shouldReturnFizzBuzzIfNumberDivBy3And5() {
+        assertEquals("fizzbuzz", Fizzbuzz.getResults(15));
     }
 
 }
